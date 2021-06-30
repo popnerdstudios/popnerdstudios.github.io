@@ -766,7 +766,14 @@ html{
         height: 65vh;
         line-height: 60px;
         padding-top: 200px;  
+
+        background: rgba(0, 0, 0, 0.4) url('background.png'); 
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center; 
     }
+
+
     
     
     .box2 {
@@ -840,12 +847,10 @@ html{
     .box3 {
         height: 250px;
         width: 100%;    
-        background: rgba(0, 0, 0, 0.7) url('city.png') no-repeat center fixed; 
+        background: rgba(0, 0, 0, 0.7) url('city.png'); 
         background-blend-mode: darken;
         background-size: cover;
-        background-position: center;
-        background-position-y: 50px;  
-        background-position-x: -490px;   
+        background-position: center;  
         padding-top: 130px;
     }
 
