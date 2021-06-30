@@ -32,6 +32,19 @@
     
 }
 
+.checkbtn{
+    font-size: 30px;
+    color:rgb(255, 49, 49);
+    float: left;
+    padding-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 .logo{
     height: auto;
     background: black; 
@@ -47,6 +60,7 @@
     z-index:200;
 }
 
+
 .navbar li{
     float: none;
     display: inline-block;
@@ -60,6 +74,34 @@
 }
 .navbar li:nth-child(2){
     float: left;
+}
+
+.navitem-navlink{
+    position: relative;
+}
+
+.navitem-navlink::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 49, 49);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.navitem-navlink:hover::before{
+    transform: scaleX(.65);
+    transform-origin: bottom center;
+}
+
+
+
+.navitem-navlink:focus::before{
+    transform: scaleX(1);
 }
 
 
@@ -85,12 +127,20 @@
 
 
 .popnerd{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
     background: black; 
     position: absolute;
     content: "";
-    left: 47%;
-    top: 0;
+
+
 }
+
 
 a{
     text-decoration: none;
@@ -191,6 +241,8 @@ a{
 
 }
 
+
+
 .box2 .explorebutton{
     display: flex;
     justify-content: center;
@@ -216,8 +268,6 @@ a{
 .explorebutton button:hover{
     font-size: 25px;
 }
-
-
 
 .box3 {
     height: 450px;
@@ -298,34 +348,6 @@ a{
 
     color: rgb(255, 49, 49);
 
-}
-
-.navitem-navlink{
-    position: relative;
-}
-
-.navitem-navlink::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 49, 49);
-    transform-origin: bottom center;
-    transition: transform 0.25s ease-out;
-}
-
-.navitem-navlink:hover::before{
-    transform: scaleX(.65);
-    transform-origin: bottom center;
-}
-
-
-
-.navitem-navlink:focus::before{
-    transform: scaleX(1);
 }
 
 html{
@@ -669,3 +691,170 @@ html{
     background:rgba(0, 0, 0, 0.85) url('monke.png') no-repeat center; 
 }
 
+
+/* RESPONSIVE */
+@media (max-width: 1000px){
+    .checkbtn{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .logo{
+        top: 0px;
+        padding-bottom: 130px;
+    }
+
+    .logo div{
+        top: 55px
+    }
+
+    .navbar ul{
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: inline-block;   
+        
+        position: absolute;
+        left: -200%;
+        top: 310px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        padding-left: 100%;
+        padding-right: 100%;
+
+        background-color: rgb(151, 41, 41);
+        background-size: 100;
+        transition: all .7s;
+    }
+
+    #check:checked ~ ul{
+        left: 50%;
+    }
+
+    .navbar{
+        margin: 0px; 
+    }
+
+    .navbar li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex: center;
+        display: block; 
+    }
+
+    .navbar li a{
+        font-size: 55px;
+        color: rgb(236, 236, 236);
+        
+    }
+
+    .navbar li:nth-child(1){
+        float: none;
+    }
+    .navbar li:nth-child(2){
+        float: none;
+    }
+
+
+    .box1 h1{
+        font-size: 70px;
+    }
+
+    .box1 {
+        height: 65vh;
+        line-height: 60px;
+        padding-top: 200px;  
+    }
+    
+    
+    .box2 {
+        height: 300px;
+        width: auto;
+        background-color: rgb(180, 45, 45);  
+        padding-top: 50px;  
+    }
+    
+    
+    .box2 .container2{
+        height: 300px;  
+        width: auto;
+
+    
+    } 
+    
+    .box2 h1{
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        font-size: 60px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .box2 p{
+        text-align: center;
+        font-size: 11px;
+        font-family: 'Orbitron', sans-serif;
+        color: white;
+        padding-left: 0%;
+    }
+    
+  
+    
+    
+    .box2 .explorebutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0%;
+        padding-top: 2%;
+        font-size: medium;
+    }
+    
+    
+    .explorebutton button{
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 30px;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(180, 45, 45);
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    
+    .explorebutton button:hover{
+        font-size: 25px;
+    }
+
+
+    .box2 .container2 img{
+        display: none;
+    }
+
+
+    .box3 {
+        height: 250px;
+        width: 100%;    
+        background: rgba(0, 0, 0, 0.7) url('city.png') no-repeat center fixed; 
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50px;  
+        background-position-x: -490px;   
+        padding-top: 130px;
+    }
+
+    .box3 h1{
+        font-size: 70px;  
+    }
+
+    .box3 .shopbutton{
+        bottom: 10px;
+    }
+
+}
