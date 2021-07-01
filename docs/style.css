@@ -359,12 +359,12 @@ html{
 
 
 .products{
-    margin-top: 50px;
-    display: flex;
+    margin-top: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .card{
@@ -376,6 +376,7 @@ html{
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 50px;
 
 }
 
@@ -387,7 +388,7 @@ html{
     font-family: 'Bebas Neue', cursive;
     color: white;
     padding-top: 5px;
-  
+    top: 215px;
 }
 
 .card h2{
@@ -397,24 +398,16 @@ html{
     font-size: 37px;
     font-family: 'Bebas Neue', cursive;
     color: white; 
-
-}
-
-
-.card:hover h1{
     top: 215px;
 }
 
-.card:hover h2{
-    top: 215px;
-    
-}
+
+
 
 .card button{
     padding-top: 5px;
     padding-bottom: 15px;
     border: none;
-    top: 265px;
     position: relative;
     float: center;
     font-size: 30px;
@@ -423,16 +416,10 @@ html{
     color: rgb(14, 14, 14);
     width: 230px;
     text-decoration: none;
-}
-
-.card:hover button{
     top: 230px;
-
-}
-
-.card button:hover{
     color:white;
 }
+
 
 
 .productimage{
@@ -514,7 +501,7 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat; 
   
     background-blend-mode: darken;
     background-size: cover;
@@ -526,7 +513,7 @@ html{
 
 .project1 h1{
     text-align: center;
-    font-size: 130px;
+    font-size: 100px;
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 136, 0);
     padding-bottom: 0px;
@@ -542,7 +529,23 @@ html{
     
 }
 
+.project1 button{
+    display: none;
+    
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+  
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+}
 
+.p1button{
+    text-align: center;
+}
 
 .subcontainer {
     display: flex;
@@ -642,7 +645,7 @@ html{
     background-position-y: -350px;
     background-blend-mode: darken;
     background-size: cover;
-
+    background-position: center;  
 
     padding-top: 153px;  
     margin-bottom: none;
@@ -651,9 +654,9 @@ html{
 
 .project2 h1{
     text-align: center;
-    font-size: 130px;
+    font-size: 100px;
     font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 142, 49);
+    color: rgb(255, 136, 0);
     padding-bottom: 0px;
     
 }
@@ -665,6 +668,24 @@ html{
     color: white;
     padding: 0px;
     
+}
+
+.project2 button{
+    display: none;
+    
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+  
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+}
+
+.p2button{
+    text-align: center;
 }
 
 .subcontainer2 {
@@ -876,6 +897,93 @@ html{
         transform: translateY(120%);
     }
 
+
+    /* Projects */
+
+    .project1 {
+        float: center;
+        
+        height: 25vh;
+        width: 100%;    
+        background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat; 
+      
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;  
+        padding-top: 153px;  
+        margin-bottom: none;
+        padding-bottom: none;
+    }
+    
+    .project1 h1{
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(255, 136, 0);
+        padding-bottom: 0px;
+        
+    }
+    
+    .project1 p{
+        display: none;
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        padding: 0px;
+        
+    }
+
+    .project1 button{
+        display: block;
+        margin: auto;
+    }
+
+    .project2 {
+        float: center;
+        
+        height: 25vh;
+        width: 100%;    
+        background: rgba(0, 0, 0, 0.25) url('collabs.png') no-repeat; 
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;  
+    
+        padding-top: 153px;  
+        margin-bottom: none;
+        padding-bottom: none;
+    }
+    
+    .project2 h1{
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(255, 136, 0);
+        padding-bottom: 0px;
+        
+    }
+    
+    .project2 p{
+        display: none;
+        text-align: center;
+        font-size: 23px;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        padding: 0px;
+
+        
+        
+    }
+
+    .project2 button{
+        display: block;
+        margin: auto;
+    }
+
+    .products{
+        grid-template-columns: auto auto;
+    }
+   
 }
 
 @media (max-width: 1400px){
@@ -891,6 +999,14 @@ html{
     .video-box{
         grid-template-columns: auto;
     }
+}
+
+@media (max-width: 650px){
+
+    .products{
+        grid-template-columns: auto;
+    }
+
 }
 
 @media (max-width: 450px){
