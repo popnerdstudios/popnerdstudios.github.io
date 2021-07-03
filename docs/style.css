@@ -11,7 +11,13 @@
 
 #body{
     height: auto;
+    overflow-x: hidden;
 }
+
+body{overflow-x: hidden;}
+
+
+.aos-init:not(.aos-animate):after {position: fixed;}
 
 .navbar ul{
     margin: 0;
@@ -517,6 +523,20 @@ html{
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 136, 0);
     padding-bottom: 0px;
+    
+}
+
+.project1 h1:hover{
+
+    color: rgb(255, 49, 49);
+
+    
+}
+
+.project2 h1:hover{
+
+    color: rgb(255, 49, 49);
+
     
 }
 
