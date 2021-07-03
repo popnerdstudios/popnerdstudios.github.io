@@ -732,6 +732,55 @@ html{
 }
 
 
+
+.project3 {
+    float: center;
+    
+    height: 33vh;
+    width: 100%;    
+    background: rgb(0, 0, 0); 
+
+    padding-top: 153px;  
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.project3 h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 136, 0);
+    padding-bottom: 0px;
+    
+}
+
+.project3 p{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 0px;
+    
+}
+
+.project3 button{
+    display: none;
+    
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+  
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+}
+
+.p3button{
+    text-align: center;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1000px){
     .checkbtn{
@@ -1005,6 +1054,88 @@ html{
     }
    
 }
+
+
+
+/* NEXUS */
+
+.timelinecontainer{
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.timelinecontainer .timeline{
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    background: rgb(255, 49, 49);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelinecontainer .event h2{
+    color: rgb(44, 44, 44);
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.timelinecontainer .event p{
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.timelinecontainer .event1{
+    text-align: right;
+    display: inline-block;
+}
+
+.timelinecontainer .event2{
+    text-align: left;
+    transform: translateX(50%);
+}
+
+.timelinecontainer .event3{
+    text-align: right;
+    display: inline-block;
+    transform: translateX(-25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1400px){
 
