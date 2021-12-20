@@ -1,34 +1,668 @@
-body{
-    background-color: rgb(19, 19, 19);
+/* INDEX.HTML */
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-div{
-    padding-top: 10%;
+#h1{
+    margin: 0;
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width:20%;
-    height:auto;
-    padding-bottom: 5px;
+#body{
+    height: auto;
 }
 
-
-button{
-    border:none;
-    background: none;
-
-    font-size: large;
-    text-decoration: underline;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(255, 166, 0);
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 25px;
+    text-align: right;
     
 }
 
-#gsave{
-    top: 5px;
+
+
+.navbar{
+    height: auto;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 60px;
+    
+}
+
+.logo{
+    height: auto;
+    background: black; 
+    border-color: black;
+    color: black;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    background-size: contain;
+    width: 100%;
+    content: "";
+    position: sticky;
+    top: 0;
+    z-index:200;
+}
+
+.navbar li{
+    float: none;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.navbar li:nth-child(1){
+    float: left;
+}
+.navbar li:nth-child(2){
+    float: left;
+}
+
+
+
+.site-title{
+    background: black; 
+    margin-top: 30px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    height: fit-content;
+    line-height: 50px;
+}
+
+.site-title-2{
+    background: black; 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    height: fit-content;
+    line-height: 50px;
+}
+
+
+.popnerd{
+    background: black; 
+    position: absolute;
+    content: "";
+    left: 47%;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(255, 49, 49);
+}
+
+
+.box1 {
+    float: center;
+    line-height: 100px;
+    height: 100vh;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.4) url('background.png') no-repeat center fixed; 
+  
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;  
+    padding-top: 300px;  
+}
+
+.box1 h1{
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.767);
+    
+}
+
+
+.box1 .learnbutton{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnbutton button{
+    margin-top: 10px;
+    background-color: rgb(255, 49, 49);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.learnbutton button:hover{
+    font-size: 25px;
+}
+
+
+.box2 {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(180, 45, 45);
+    background-size: cover;
+    background-position: center;  
+    padding-top: 50px;  
+}
+
+
+.box2 .container2{
+    height: 500px;
+    width: 100%;    
+    position: relative; 
+    overflow: auto;
+
+} 
+
+.box2 h1{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    width: 60%;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 0%;
+    font-size: 120px;
+}
+
+.box2 p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    padding-left: 18%;
+}
+
+.box2 .container2 img{
+    width: 28%;
+    bottom:0;
+    margin-left: 50px;
+    position: absolute;
+    z-index:100;
+
+}
+
+.box2 .explorebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 2%;
+    font-size: medium;
+}
+
+
+.explorebutton button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(180, 45, 45);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.explorebutton button:hover{
+    font-size: 25px;
+}
+
+
+
+.box3 {
+    height: 450px;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.7) url('city.png') no-repeat center fixed; 
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50px;    
+    padding-top: 230px;
+}
+
+.box3 h1{
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+    margin: none;
+}
+
+.box3 .shopbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    padding-top: none;
+    margin: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.shopbutton button{
+    margin-top: 0px;
+    background-color: rgb(255, 49, 49);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 4px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.shopbutton button:hover{
+    font-size: 25px;
+}
+
+.box4 {
+    padding-top: 40px;
+    height: 150px;
+    width: 100%;    
+    background: black;   
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials i{
+    padding-left: 19px;
+    padding-right: 19px;
+    float: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials i:hover{
+
+    color: rgb(255, 49, 49);
+
+}
+
+.navitem-navlink{
+    position: relative;
+}
+
+.navitem-navlink::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 49, 49);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.navitem-navlink:hover::before{
+    transform: scaleX(.65);
+    transform-origin: bottom center;
+}
+
+
+
+.navitem-navlink:focus::before{
+    transform: scaleX(1);
+}
+
+html{
+    background: black; 
+
+}
+
+/* STORE.HTML */
+
+
+.products{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 230px;
+    height: 365px;
+    background:rgb(14, 14, 14);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card h1{
+    top: 230px;
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding-top: 5px;
+  
+}
+
+.card h2{
+    top: 230px;
+    position: relative;
+    text-align: center;
+    font-size: 37px;
+    font-family: 'Bebas Neue', cursive;
+    color: white; 
+
+}
+
+
+.card:hover h1{
+    top: 215px;
+}
+
+.card:hover h2{
+    top: 215px;
+    
+}
+
+.card button{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border: none;
+    top: 265px;
+    position: relative;
+    float: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    background:rgb(180, 45, 45);
+    color: rgb(14, 14, 14);
+    width: 230px;
+    text-decoration: none;
+}
+
+.card:hover button{
+    top: 230px;
+
+}
+
+.card button:hover{
+    color:white;
+}
+
+
+.productimage{
+    top: -5px;
+    position:absolute;
+    left:0px; 
+}
+
+.productimage img{
+    max-width:100%;
+    height:auto;
+    transform: translateY(-20px);
+    
+}
+
+.box1 h1{
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.767)
+}
+
+
+
+/*TUTORIALS.HTML*/
+
+
+
+.tutcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;   
+}
+
+
+.tut{
+    width: 100%;
+    height: 500px;
+    background:rgba(0, 0, 0, 0.55) url('tut.png') no-repeat center; 
+    background-size: 100%;
+    background-position-y: -190px;
+    background-blend-mode: darken;
+    position: relative;
+    overflow: hidden;  
+}
+
+
+.tut h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    position: center;
+    transform: translateY(150%);
+    
+}
+.video-box{
+    margin-top: 50px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    border: none;
+}
+
+
+/*PROJECTS.HTML*/
+
+
+
+.project1 {
+    float: center;
+    
+    height: 33vh;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat center fixed; 
+  
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;  
+    padding-top: 153px;  
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.project1 h1{
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 136, 0);
+    padding-bottom: 0px;
+    
+}
+
+.project1 p{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 0px;
+    
+}
+
+
+
+.subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: left;
+    align-items: center;
+    height: 500px auto;
+    width: 100%;   
+}
+
+.subcontainer li:nth-child(2){
+    background:rgba(0, 0, 0, 0.7) url('tales.png') no-repeat center;  
+}
+
+.subcontainer li:nth-child(3){
+    background:rgba(0, 0, 0, 0.55) url('earth.jpg') no-repeat center;  
+}
+
+.sub{
+    width: 50%;
+    height: 350px;
+    background:rgba(0, 0, 0, 0.6) url('lab.png') no-repeat center; 
+    background-blend-mode: darken;
+    position: relative;
+    overflow: hidden;  
+    padding-bottom: 90px;
+}
+
+.sub:hover{
+    background:rgba(0, 0, 0, 0.85) url('lab.png') no-repeat center; 
+    background-blend-mode: darken;  
+}
+
+.subcontainer li:nth-child(2):hover{
+    background:rgba(0, 0, 0, 0.85) url('tales.png') no-repeat center; 
+}
+
+.subcontainer li:nth-child(3):hover{
+    background:rgba(0, 0, 0, 0.8) url('earth.jpg') no-repeat center;  
+}
+
+.sub h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    position: center;
+    transform: translateY(90%);
+    
+}
+
+.sub h1:hover{
+    color: rgb(255, 49, 49);
+}
+
+.sub p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    position: center;
+    transform: translateY(90%);
+    
+}
+
+.sub h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    position: center;
+    transform: translateY(780%);
+    
+}
+
+.projectimage{
+    top: -5px;
+    position:absolute;
+    left:0px; 
+}
+
+.projectimage img{
+    max-width:100%;
+    height:auto;
+    transform: translateY(-20px);
+    
+}
+
+/*Project2*/
+.project2 {
+    float: center;
+    
+    height: 33vh;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.25) url('collabs.png') no-repeat; 
+    background-position-y: -350px;
+    background-blend-mode: darken;
+    background-size: cover;
+
+
+    padding-top: 153px;  
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.project2 h1{
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 142, 49);
+    padding-bottom: 0px;
+    
+}
+
+.project2 p{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 0px;
+    
+}
+
+.subcontainer2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 500px;
+    width: 100%; 
+}
+
+
+.subcontainer2 li:nth-child(2){
+    background:rgba(0, 0, 0); 
+    background-blend-mode: darken;  
+}
+
+.subcontainer2 li:nth-child(1){
+    background:rgba(0, 0, 0, 0.7) url('monke.png') no-repeat center; 
+    background-blend-mode: darken;  
+}
+
+.subcontainer2 li:nth-child(1):hover{
+    background:rgba(0, 0, 0, 0.85) url('monke.png') no-repeat center; 
 }
 
