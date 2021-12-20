@@ -160,7 +160,7 @@ a{
     line-height: 100px;
     height: 100vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.4) url('background.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.4) url('/docs/images/background.png') no-repeat center fixed; 
   
     background-blend-mode: darken;
     background-size: cover;
@@ -278,7 +278,7 @@ a{
 .box3 {
     height: 450px;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.7) url('city.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.7) url('/docs/images/city.png') no-repeat center fixed; 
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
@@ -465,7 +465,7 @@ html{
 .tut{
     width: 100%;
     height: 500px;
-    background:rgba(0, 0, 0, 0.55) url('tut.png') no-repeat; 
+    background:rgba(0, 0, 0, 0.55) url('/docs/images/tut.png') no-repeat; 
     background-size: 100%;
     background-position-y: -50px;
     background-blend-mode: darken;
@@ -507,7 +507,7 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat; 
+    background: rgba(0, 0, 0, 0.55) url('/docs/images/ships.png') no-repeat; 
   
     background-blend-mode: darken;
     background-size: cover;
@@ -578,17 +578,17 @@ html{
 }
 
 .subcontainer li:nth-child(2){
-    background:rgba(0, 0, 0, 0.7) url('tales.png') no-repeat center;  
+    background:rgba(0, 0, 0, 0.7) url('/docs/images/tales.png') no-repeat center;  
 }
 
 .subcontainer li:nth-child(3){
-    background:rgba(0, 0, 0, 0.55) url('earth.jpg') no-repeat center;  
+    background:rgba(0, 0, 0, 0.55) url('/docs/images/earth.jpg') no-repeat center;  
 }
 
 .sub{
     width: 50%;
     height: 350px;
-    background:rgba(0, 0, 0, 0.6) url('lab.png') no-repeat center; 
+    background:rgba(0, 0, 0, 0.6) url('/docs/images/lab.png') no-repeat center; 
     background-blend-mode: darken;
     position: relative;
     overflow: hidden;  
@@ -596,16 +596,16 @@ html{
 }
 
 .sub:hover{
-    background:rgba(0, 0, 0, 0.85) url('lab.png') no-repeat center; 
+    background:rgba(0, 0, 0, 0.85) url('/docs/images/lab.png') no-repeat center; 
     background-blend-mode: darken;  
 }
 
 .subcontainer li:nth-child(2):hover{
-    background:rgba(0, 0, 0, 0.85) url('tales.png') no-repeat center; 
+    background:rgba(0, 0, 0, 0.85) url('/docs/images/tales.png') no-repeat center; 
 }
 
 .subcontainer li:nth-child(3):hover{
-    background:rgba(0, 0, 0, 0.8) url('earth.jpg') no-repeat center;  
+    background:rgba(0, 0, 0, 0.8) url('/docs/images/earth.jpg') no-repeat center;  
 }
 
 .sub h1{
@@ -661,7 +661,7 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.25) url('collabs.png') no-repeat; 
+    background: rgba(0, 0, 0, 0.25) url('/docs/images/collabs.png') no-repeat; 
     background-position-y: -350px;
     background-blend-mode: darken;
     background-size: cover;
@@ -723,12 +723,12 @@ html{
 }
 
 .subcontainer2 li:nth-child(1){
-    background:rgba(0, 0, 0, 0.7) url('monke.png') no-repeat center; 
+    background:rgba(0, 0, 0, 0.7) url('/docs/images/monke.png') no-repeat center; 
     background-blend-mode: darken;  
 }
 
 .subcontainer2 li:nth-child(1):hover{
-    background:rgba(0, 0, 0, 0.85) url('monke.png') no-repeat center; 
+    background:rgba(0, 0, 0, 0.85) url('/docs/images/monke.png') no-repeat center; 
 }
 
 
@@ -995,7 +995,7 @@ html{
         line-height: 60px;
         padding-top: 200px;  
 
-        background: rgba(0, 0, 0, 0.4) url('background.png'); 
+        background: rgba(0, 0, 0, 0.4) url('/docs/images/background.png'); 
         background-blend-mode: darken;
         background-size: cover;
         background-position: center; 
@@ -1075,7 +1075,7 @@ html{
     .box3 {
         height: 250px;
         width: 100%;    
-        background: rgba(0, 0, 0, 0.7) url('city.png'); 
+        background: rgba(0, 0, 0, 0.7) url('/docs/images/city.png'); 
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;  
@@ -1095,7 +1095,7 @@ html{
 
     .tut{
         height: 200px;
-        background:rgba(0, 0, 0, 0.55) url('tut.png') no-repeat; 
+        background:rgba(0, 0, 0, 0.55) url('/docs/images/tut.png') no-repeat; 
         background-size: 150%;
         background-position-y: -50px; 
     }
@@ -1113,7 +1113,7 @@ html{
         
         height: 25vh;
         width: 100%;    
-        background: rgba(0, 0, 0, 0.55) url('ships.png') no-repeat; 
+        background: rgba(0, 0, 0, 0.55) url('/docs/images/ships.png') no-repeat; 
       
         background-blend-mode: darken;
         background-size: cover;
@@ -1152,7 +1152,7 @@ html{
         
         height: 25vh;
         width: 100%;    
-        background: rgba(0, 0, 0, 0.25) url('collabs.png') no-repeat; 
+        background: rgba(0, 0, 0, 0.25) url('/docs/images/collabs.png') no-repeat; 
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;  
