@@ -781,145 +781,6 @@ html{
     text-align: center;
 }
 
-
-/* NEXUS */
-
-.timelinecontainer{
-    padding-top: 100px;
-}
-
-.leftcontainer{
-    position: absolute;
-    right: 55%;
-    text-align: right;
-    margin: 0;
-    border: none;
-    margin-right:none;
-
-    padding-top: 30px;
-   
-}
-
-.rightcontainer{
-    position: absolute;
-    left: 55%;
-    text-align: left;
-    margin: 0;
-    border: none;
-    margin-right:none;
-   
-    padding-top: 30px;
-}
-
-.timeline{
-    display: flex;
-    position: absolute;
-    height: 150%;
-    width: 7px;
-    background: rgb(255, 49, 49);
-    left: 50%;
-    transform: translateX(-50%);
-
-}
-
-.leftcontainer .event{
-    padding-bottom: 40px;
-    margin-left: 15%;
-}
-
-.rightcontainer .event{
-    padding-bottom: 40px;
-    margin-right: 15%;
-}
-
-
-.event h2{
-    color: rgb(65, 65, 65);
-    font-size: 40px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.event p{
-    color: rgb(65, 65, 65);
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-
-}
-
-
-.empty{
-    padding-bottom: 100px;
-}
-
-.event4{
-    padding-top: 30px;
-}
-
-.event h1{
-    font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.event1 h1{
-    color: rgb(104, 49, 255);
-} 
-
-.event2 h1{
-    color: rgb(255, 183, 49);
-} 
-
-.event3 h1{
-    color: rgb(255, 80, 49);
-} 
-
-.event4 h1{
-    color: rgb(49, 197, 255);
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 1000px){
     .checkbtn{
@@ -1191,24 +1052,87 @@ html{
     .products{
         grid-template-columns: auto auto;
     }
-
-    /* NEXUSVERSE */
-
-    .event h2{
-        font-size: 30px;
-    }
-    
-    .event p{
-        font-size: 15px;
-    
-    }
-
-    .event h1{
-        font-size: 35px;
-    
-    }
    
 }
+
+
+
+/* NEXUS */
+
+.timelinecontainer{
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.timelinecontainer .timeline{
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    background: rgb(255, 49, 49);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelinecontainer .event h2{
+    color: rgb(44, 44, 44);
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.timelinecontainer .event p{
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.timelinecontainer .event1{
+    text-align: right;
+    display: inline-block;
+}
+
+.timelinecontainer .event2{
+    text-align: left;
+    transform: translateX(50%);
+}
+
+.timelinecontainer .event3{
+    text-align: right;
+    display: inline-block;
+    transform: translateX(-25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
