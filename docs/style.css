@@ -160,7 +160,7 @@ a{
     line-height: 100px;
     height: 100vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.4) url('images/background.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.4) url('./images/background.png') no-repeat center fixed; 
   
     background-blend-mode: darken;
     background-size: cover;
