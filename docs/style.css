@@ -158,7 +158,7 @@ a{
 .box1 {
     float: center;
     line-height: 100px;
-    height: 100vh;
+    height: 50vh;
     width: 100%;    
     background: rgba(0, 0, 0, 0.4) url('./images/background.png') no-repeat center fixed; 
   
@@ -205,7 +205,7 @@ a{
 .box2 {
     height: 500px;
     width: 100%;
-    background-color: rgb(180, 45, 45);
+    background-color: rgb(172, 6, 6);
     background-size: cover;
     background-position: center;  
     padding-top: 50px;  
@@ -278,7 +278,7 @@ a{
 .box3 {
     height: 450px;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.7) url('images/city.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.6) url('images/city.png') no-repeat center fixed; 
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
@@ -290,8 +290,7 @@ a{
     text-align: center;
     font-size: 120px;
     font-family: 'Bebas Neue', cursive;
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+    color: rgb(255, 255, 255);
     margin: none;
 }
 
@@ -308,7 +307,7 @@ a{
 
 .shopbutton button{
     margin-top: 0px;
-    background-color: rgb(255, 49, 49);
+    background-color: rgb(55, 91, 116);
     border: none;
     border-radius: 30px;
     font-family: 'Bebas Neue', cursive;
@@ -316,14 +315,71 @@ a{
     padding: 4px 14px;
     text-align: center;
     text-decoration: none;
-    font-size: 22px;
-}
-
-.shopbutton button:hover{
     font-size: 25px;
 }
 
+.shopbutton button:hover{
+    font-size: 30px;
+    color: rgb(92, 150, 189);
+}
+
+
 .box4 {
+    padding-top: 40px;
+    height: 500px;
+    width: 100%;    
+    background: rgb(126, 25, 25);   
+}
+
+.box4 h1{
+    text-align: center;
+    font-size: 125px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 242, 58);
+    margin: none;
+}
+
+.box4 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:10%;
+    padding-left: 50px;
+}
+
+.creators {
+    color:white;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    size: 10%;
+}
+
+.box4 h1{
+    padding-top: 20px;
+}
+
+.box4 h2{
+    padding-right: 50px;
+    padding-left: 50px;   
+}
+
+.box4 p{
+    color:rgb(214, 214, 214);
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    size: 10%;
+}
+
+.box5 {
     padding-top: 40px;
     height: 150px;
     width: 100%;    
@@ -331,7 +387,27 @@ a{
 }
 
 
+.usocials{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 50px;
+}
 
+.usocials i{
+    padding-left: 10px;
+    padding-right: 10px;
+    float: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.usocials i:hover{
+    color: rgb(251, 255, 0);
+}
 
 .socials{
     display: flex;
@@ -464,11 +540,11 @@ html{
 
 .tut{
     width: 100%;
-    height: 500px;
-    background:rgba(0, 0, 0, 0.55) url('images/tut.png') no-repeat; 
+    height: 200px;
+    /*background:rgba(0, 0, 0, 0.55) url('images/tut.png') no-repeat; 
     background-size: 100%;
     background-position-y: -50px;
-    background-blend-mode: darken;
+    background-blend-mode: darken;*/
     position: relative;
     overflow: hidden;  
 }
@@ -480,13 +556,14 @@ html{
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);
     position: center;
-    transform: translateY(150%);
+    transform: translateY(50%);
     
 }
 .video-box{
     margin-top: 50px;
     display: grid;
     grid-column-gap: 10px;
+    grid-row-gap: 8px;
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
@@ -661,7 +738,7 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.25) url('images/collabs.png') no-repeat; 
+    background: rgba(27, 27, 27, 0.25); /*url('images/collabs.png') no-repeat; */
     background-position-y: -350px;
     background-blend-mode: darken;
     background-size: cover;
