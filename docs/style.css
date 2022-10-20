@@ -411,6 +411,19 @@ a{
     border-left: 12px solid rgb(255, 129, 12);   
 }
 
+.box5 .collabs{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.box5 img{
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .box6 {
     padding-top: 40px;
