@@ -240,6 +240,7 @@ a{
 
 .box2 .container2 img{
     width: 28%;
+    max-width: 530px;;
     bottom:0;
     margin-left: 50px;
     position: absolute;
@@ -278,7 +279,7 @@ a{
 .box3 {
     height: 450px;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.6) url('images/city.png') no-repeat center fixed; 
+    background: rgba(0, 0, 0, 0.8) url('images/city.png') no-repeat center fixed; 
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
@@ -325,17 +326,17 @@ a{
 
 
 .box4 {
-    padding-top: 40px;
-    height: 500px;
+    padding-top: 50px;
+    height: 400px;
     width: 100%;    
-    background: rgb(126, 25, 25);   
+    background: rgb(255, 129, 12);   
 }
 
 .box4 h1{
     text-align: center;
-    font-size: 125px;
+    font-size: 85px;
     font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 121, 31);
+    color: rgb(255, 255, 255);
     margin: none;
 }
 
@@ -368,7 +369,7 @@ a{
 }
 
 .box4 p{
-    color:rgb(214, 214, 214);
+    color:rgb(238, 238, 238);
     font-size: 25px;
     font-family: 'Bebas Neue', cursive;
     display: flex;
@@ -380,10 +381,53 @@ a{
 }
 
 .box5 {
+    height: 450px;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.8) url('images/ash.png') no-repeat center fixed; 
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50px;    
+    padding-top: 290px;
+}
+
+.box5 p{
+    color:rgb(187, 187, 187);
+    
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    size: 10%;
+
+    padding-left: 10px;
+}
+
+
+.box5 .about{
+    max-width:920px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 12px solid rgb(255, 129, 12);   
+}
+
+
+.box6 {
     padding-top: 40px;
     height: 150px;
     width: 100%;    
     background: black;   
+}
+
+.pfp{
+    padding-left: 10px;
+    padding-right: 10px;
+    float: center;
+    color: rgb(207, 207, 207);  
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
 }
 
 
@@ -406,7 +450,7 @@ a{
 }
 
 .usocials i:hover{
-    color: rgb(251, 255, 0);
+    color: rgb(255, 0, 0);
 }
 
 .socials{
