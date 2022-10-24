@@ -329,7 +329,7 @@ a{
     padding-top: 50px;
     height: 400px;
     width: 100%;    
-    background: rgb(255, 129, 12);   
+    background: rgb(255, 145, 0)  ;    
 }
 
 .box4 h1{
@@ -380,6 +380,24 @@ a{
     size: 10%;
 }
 
+@media (max-width: 900px){
+    .box4 p{
+        font-size: 20px;
+    }
+
+    .box4 h1{
+        font-size: 45px;
+    }
+
+    .box4 h2{
+        font-size: 45px;
+    }
+
+    .box4 img{
+        max-width:1%;
+    }
+}
+
 .box5 {
     height: 450px;
     width: 100%;    
@@ -390,6 +408,7 @@ a{
     background-position-y: 50px;    
     padding-top: 290px;
 }
+
 
 .box5 p{
     color:rgb(187, 187, 187);
@@ -408,7 +427,7 @@ a{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-left: 12px solid rgb(255, 129, 12);   
+    border-left: 12px solid rgb(255, 145, 0)  ;   
 }
 
 .box5 .collabs{
@@ -422,6 +441,16 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 900px){
+    .box5 img{
+        max-width:400px;
+    }
+
+    .box5 p{
+        font-size: 15px;
+    }
 }
 
 
