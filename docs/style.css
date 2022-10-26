@@ -461,6 +461,18 @@ a{
     background: black;   
 }
 
+.box6 a {
+    color:rgb(48, 133, 167);
+    font-size: 17px;
+    font-family: 'Bebas', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    size: 10%;  
+}
+
+
 .pfp{
     padding-left: 10px;
     padding-right: 10px;
@@ -670,7 +682,7 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(0, 0, 0, 0.55) url('images/ships.png') no-repeat; 
+    background: rgba(0, 0, 0, 0.65) url('images/ships.png') no-repeat; 
   
     background-blend-mode: darken;
     background-size: cover;
@@ -682,8 +694,8 @@ html{
 
 .project1 h1{
     text-align: center;
-    font-size: 100px;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    font-family: 'Orbitron', sans-serif;
     color: rgb(255, 136, 0);
     padding-bottom: 0px;
     
@@ -824,22 +836,22 @@ html{
     
     height: 33vh;
     width: 100%;    
-    background: rgba(27, 27, 27, 0.25); /*url('images/collabs.png') no-repeat; */
+    background: rgba(0, 0, 0, 0.96) url('images/signs2.png') no-repeat; 
     background-position-y: -350px;
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;  
 
-    padding-top: 153px;  
+    padding-top: 240px;  
     margin-bottom: none;
     padding-bottom: none;
 }
 
 .project2 h1{
     text-align: center;
-    font-size: 100px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 136, 0);
+    font-size: 75px;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(0, 225, 255);
     padding-bottom: 0px;
     
 }
@@ -1147,26 +1159,20 @@ html{
     
     .project1 h1{
         text-align: center;
-        font-size: 60px;
-        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        font-family: 'Orbitron', sans-serif;
         color: rgb(255, 136, 0);
         padding-bottom: 0px;
         
     }
     
     .project1 p{
-        display: none;
         text-align: center;
-        font-size: 13px;
+        font-size: 17px;
         font-family: 'Bebas Neue', cursive;
         color: white;
         padding: 0px;
         
-    }
-
-    .project1 button{
-        display: block;
-        margin: auto;
     }
 
     .project2 {
@@ -1174,7 +1180,6 @@ html{
         
         height: 25vh;
         width: 100%;    
-        background: rgba(0, 0, 0, 0.25) url('images/collabs.png') no-repeat; 
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;  
@@ -1185,18 +1190,12 @@ html{
     }
     
     .project2 h1{
-        text-align: center;
-        font-size: 60px;
-        font-family: 'Bebas Neue', cursive;
-        color: rgb(255, 136, 0);
-        padding-bottom: 0px;
-        
+        font-size: 40px;
     }
     
     .project2 p{
-        display: none;
+        font-size: 17px;
         text-align: center;
-        font-size: 23px;
         font-family: 'Bebas Neue', cursive;
         color: white;
         padding: 0px;
