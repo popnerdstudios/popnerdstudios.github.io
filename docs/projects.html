@@ -119,6 +119,60 @@
 -->
       </div>
 
+            <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+            <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+            <script>
+              /* paste this line in verbatim */
+              window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+              /* customize formbutton below*/     
+              formbutton("create", {
+                action: "https://formspree.io/f/mzbwjvwr",
+                title: "Contact Us",
+                buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+                fields: [
+                  { 
+                    type: "email", 
+                    label: "Email:", 
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                  },
+                  {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                  },
+                  {
+                    type: "checkbox",
+                    label: "Sign me up for the PopNerd newsletter for updates, discounts, and free assets.",
+                    style: {
+                      label: {
+                        marginBottom: "30px",
+                        color: "gray",
+                      }
+                    }
+                  },
+                  { type: "submit" }      
+                ],
+                styles: {
+                  title: {
+                    backgroundColor: "rgb(255, 49, 49)",
+                    fontFamily:'"Bebas", sans-serif',
+                  },
+                  button: {
+      
+                    backgroundColor: "rgb(255, 49, 49)"
+                  },
+                  body: {
+                    fontFamily:'"Bebas", sans-serif',
+                    margin: "auto"
+                  },
+      
+                }
+              });
+            </script>
+
   </body>
 
 </html>
