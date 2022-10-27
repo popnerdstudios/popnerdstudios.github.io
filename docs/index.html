@@ -131,34 +131,63 @@
       <a href = "mailto: realpopnerd@gmail.com">realpopnerd@gmail.com</a>
     </div>
 
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mzbwjvwr"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Environment Design", "Blender Tutorials", "Worldbuilding Tools"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        });
+      </script>
 
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <script>
-    var typed = new Typed(".auto-type", {
-      strings: ["Environment Design", "Blender Tutorials", "Worldbuilding Tools"],
-      typeSpeed: 150,
-      backSpeed: 150,
-      loop: true
-    });
-  </script>
+      <!-- POPUP -->
+
+
+      <div id="popup">
+        <div id="popupcontents" class="popup">
+          <button onclick="closepopup()"  id="closepopup">x</button>
+          <h2 id="signup">JOIN OUR NEWSLETTER.</h2>
+          <p>Stay Updated And Get Discounts, Free Assets, & More!</p>
+
+          <form action="https://formspree.io/f/mzbwjvwr" method="POST">
+            <label>
+              <input type="email" name="email" placeholder="Email">
+            </label>
+            <br>
+            <button type="submit">Send</button>
+          </form>   
+        </div>
+      </div>
+  
+      <script>
+        var popup = document.getElementById("popup");
+
+        console.log(popup.style);
+        function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+        }
+
+        delay(6000).then(() => {popup.style.display = "block"});
+
+
+
+        function closepopup(){
+          popup.style.display = "none";
+        }
+          
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+              popup.style.display = "none";
+            }
+        }
+      </script>
+
 
   </body>
 
