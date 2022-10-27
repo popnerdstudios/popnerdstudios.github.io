@@ -1404,13 +1404,17 @@ html{
     border-radius: 10px;
     width: 700px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+    animation: fadeIn 2s;
 
     font-size: 25px;
     align-content: center;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   #signup{
