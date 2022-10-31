@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <meta charset="utf-8">
+    <title>PopNerd Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="index.js" charset="utf-8" defer></script>
+  </head>
+
+  <script async="" defer="defer" src="//platform.instagram.com/en_US/embeds.js"></script>
+  <body>
+
+    <header class="logo">
+      <div class="popnerd">
+        <a href="index.html"><h1 class="site-title"></i>Pop</h1></a>
+        <a href="index.html"><h1 class="site-title-2"></i>Nerd</h1></a>
+      </div>
+
+      <div class="navbar">
+        <input type="checkbox" id="check"> 
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="navlist">
+          <li class="navitem-navlink active"><a href="index.html">Home</a></li>
+          <li class="navitem-navlink"><a href="projects.html">Projects</a></li>
+          <li class="navitem-navlink"><a href="tutorials.html">Videos</a></li>
+          <li class="navitem-navlink"><a href="https://popnerd.gumroad.com/">Store</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+        /* customize formbutton below*/     
+        formbutton("create", {
+        action: "https://formspree.io/f/mzbwjvwr",
+        title: "Contact Us",
+        buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+        fields: [
+            { 
+            type: "email", 
+            label: "Email:", 
+            name: "email",
+            required: true,
+            placeholder: "your@email.com"
+            },
+            {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "What's on your mind?",
+            },
+            {
+            type: "checkbox",
+            label: "Sign me up for the PopNerd newsletter for updates, discounts, and free assets.",
+            style: {
+                label: {
+                marginBottom: "30px",
+                color: "gray",
+                }
+            }
+            },
+            { type: "submit" }      
+        ],
+        styles: {
+            title: {
+            backgroundColor: "rgb(255, 49, 49)",
+            fontFamily:'"Bebas", sans-serif',
+            },
+            button: {
+
+            backgroundColor: "rgb(255, 49, 49)"
+            },
+            body: {
+            fontFamily:'"Bebas", sans-serif',
+            margin: "auto"
+            },
+
+        }
+        });
+    </script>
+
+    <div class="box6">
+        <ul style="list-style: none;" class="socials">
+        <li><a href="https://www.instagram.com/astronautalpaca/"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://www.youtube.com/c/PopNerdStudios/"><i class="fab fa-youtube fa-2x"></i></a></li>
+        <li><a href="https://discord.com/invite/UcF87xa"><i class="fab fa-discord fa-2x"></i></a></li>
+        </ul>
+        <a href = "mailto:realpopnerd@gmail.com">realpopnerd@gmail.com</a>
+    </div>
+ 
+  </body>
+
+  <script async src="http://www.instagram.com/embed.js"> window.instgrm.Embeds.process() </script>
+</html>

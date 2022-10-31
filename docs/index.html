@@ -174,9 +174,12 @@
             return new Promise(resolve => setTimeout(resolve, time));
         }
 
-        delay(6000).then(() => {popup.style.display = "block"});
-
-
+        var x = window.matchMedia("(max-width: 1000px)");
+        if (x.matches) { 
+          delay(6000).then(() => {popup.style.display = "hidden"});
+        } else{
+          delay(6000).then(() => {popup.style.display = "block"});
+        }
 
         function closepopup(){
           popup.style.display = "none";
