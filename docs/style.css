@@ -117,7 +117,7 @@ body{overflow-x: hidden;}
     font-size: 70px;
     font-family: 'Bebas Neue', cursive;
     height: fit-content;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .site-title-2{
@@ -126,13 +126,12 @@ body{overflow-x: hidden;}
     font-size: 50px;
     font-family: 'Bebas Neue', cursive;
     height: fit-content;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 
 .popnerd{
 
-    
     position: absolute;
     left: 50%;
     top: 43%;
@@ -166,15 +165,15 @@ a{
 
 .box1 {
     float: center;
-    line-height: 100px;
-    height: 50vh;
+    line-height: 50px;
+    height: 75vh;
     width: 100%;    
     background: rgba(0, 0, 0, 0.4) url('./images/background.png') no-repeat center fixed; 
   
     background-blend-mode: darken;
     background-size: cover;
-    background-position: center;  
-    padding-top: 300px;  
+    background-position: 0 0px;  
+    padding-top: 200px;  
 }
 
 .box1 h1{
@@ -194,13 +193,13 @@ a{
 }
 
 .learnbutton button{
-    margin-top: 10px;
+    margin-top: 0px;
     background-color: rgb(255, 49, 49);
     border: none;
     border-radius: 30px;
     font-family: 'Bebas Neue', cursive;
     color: white;
-    padding: 8px 16px;
+    padding: 0px 16px;
     text-align: center;
     text-decoration: none;
     font-size: 22px;
@@ -212,7 +211,7 @@ a{
 
 
 .box2 {
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: rgb(172, 6, 6);
     background-size: cover;
@@ -222,21 +221,20 @@ a{
 
 
 .box2 .container2{
-    height: 500px;
+    height: 600px;
     width: 100%;    
     position: relative; 
     overflow: auto;
-
 } 
 
 .box2 h1{
     color: white;
     font-family: 'Orbitron', sans-serif;
     width: 60%;
-    text-align: center;
     padding-left: 30%;
     padding-top: 0%;
     font-size: 120px;
+    box-sizing:content-box;
 }
 
 .box2 p{
@@ -252,6 +250,7 @@ a{
     max-width: 530px;;
     bottom:0;
     margin-left: 50px;
+    margin-bottom: 50px;
     position: absolute;
     z-index:8;
 
@@ -264,8 +263,8 @@ a{
     justify-content: center;
     align-items: center;
     padding-left: 20%;
-    padding-top: 2%;
-    font-size: medium;
+    padding-top: 0%;
+    font-size: small;
 }
 
 
@@ -286,7 +285,7 @@ a{
 }
 
 .box3 {
-    height: 450px;
+    height: 600px;
     width: 100%;    
     background: rgba(0, 0, 0, 0.8) url('images/city.png') no-repeat center fixed; 
     background-blend-mode: darken;
@@ -335,18 +334,11 @@ a{
 
 
 .box4 {
-    padding-top: 50px;
-    height: 400px;
+    line-height: 0px;
+    padding-top: 25px;
+    height: 450px;
     width: 100%;    
     background: rgb(255, 145, 0)  ;    
-}
-
-.box4 h1{
-    text-align: center;
-    font-size: 85px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 255, 255);
-    margin: none;
 }
 
 .box4 img{
@@ -359,7 +351,7 @@ a{
 
 .creators {
     color:white;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Bebas Neue', cursive;
     display: flex;
     justify-content: center;
@@ -369,10 +361,17 @@ a{
 }
 
 .box4 h1{
+    font-weight: 60;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    margin: none;
     padding-top: 20px;
 }
 
 .box4 h2{
+    font-size: 85px;
     padding-right: 50px;
     padding-left: 50px;   
 }
@@ -408,14 +407,15 @@ a{
 }
 
 .box5 {
-    height: 450px;
+    line-height: 25px;
+    height: 750px;
     width: 100%;    
     background: rgba(0, 0, 0, 0.8) url('images/ash.png') no-repeat center fixed; 
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     background-position-y: 50px;    
-    padding-top: 290px;
+    padding-top: 250px;
 }
 
 
@@ -446,7 +446,7 @@ a{
 }
 
 .box5 img{
-    max-width: 800px;
+    max-width: 650px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -477,8 +477,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 0px;
     size: 10%;  
+}
+
+.box6 ul{
+    padding: none;
 }
 
 
@@ -498,7 +502,7 @@ a{
     display: flex;
     justify-content: left;
     align-items: left;
-    padding-left: 50px;
+    padding: none;
 }
 
 .usocials i{
@@ -517,6 +521,7 @@ a{
 }
 
 .socials{
+    padding-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
