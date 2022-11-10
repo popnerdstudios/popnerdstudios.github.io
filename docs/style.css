@@ -209,19 +209,20 @@ a{
     font-size: 25px;
 }
 
+.carousel-item{
+    height: 550px;
+}
 
 .box2 {
-    height: 600px;
+    height: 550px;
     width: 100%;
-    background-color: rgb(172, 6, 6);
     background-size: cover;
     background-position: center;  
-    padding-top: 50px;  
+    position: relative;
 }
 
 
 .box2 .container2{
-    height: 600px;
     width: 100%;    
     position: relative; 
     overflow: auto;
@@ -231,8 +232,7 @@ a{
     color: white;
     font-family: 'Orbitron', sans-serif;
     width: 60%;
-    padding-left: 30%;
-    padding-top: 0%;
+    padding-top: 0px;
     font-size: 120px;
     box-sizing:content-box;
 }
@@ -245,17 +245,21 @@ a{
     padding-left: 18%;
 }
 
-.box2 .container2 img{
-    width: 28%;
-    max-width: 530px;;
-    bottom:0;
-    margin-left: 50px;
-    margin-bottom: 50px;
+.transparent img{
     position: absolute;
-    z-index:8;
+    width: 30%;
+    bottom: 0;
+    max-width: 400px;
+    margin-left: 50px;
+    z-index:1;
 
+    padding-top: 200px;
 }
 
+.item3 img{
+    margin-left: 100px;
+    scale: 200%;
+}
 
 
 .box2 .explorebutton{
@@ -388,23 +392,6 @@ a{
     size: 10%;
 }
 
-@media (max-width: 900px){
-    .box4 p{
-        font-size: 20px;
-    }
-
-    .box4 h1{
-        font-size: 45px;
-    }
-
-    .box4 h2{
-        font-size: 45px;
-    }
-
-    .box4 img{
-        max-width:1%;
-    }
-}
 
 .box5 {
     line-height: 25px;
@@ -452,15 +439,6 @@ a{
     margin-right: auto;
 }
 
-@media (max-width: 900px){
-    .box5 img{
-        max-width:400px;
-    }
-
-    .box5 p{
-        font-size: 15px;
-    }
-}
 
 
 .box6 {
@@ -970,267 +948,6 @@ html{
     text-align: center;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1000px){
-    .checkbtn{
-        display: block;
-        padding-top: 50px;
-    }
-
-    .logo{
-        top: 0px;
-        padding-bottom: 130px;
-    }
-
-    .logo div{
-        top: 55px
-    }
-
-    .navbar ul{
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        display: inline-block;   
-        
-        position: absolute;
-        left: -200%;
-        top: 287px;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-        padding-left: 100%;
-        padding-right: 100%;
-
-        background-color: rgb(255, 49, 49);
-        background-size: 100;
-        transition: all .7s;
-    }
-
-    #check:checked ~ ul{
-        left: 50%;
-    }
-
-    .navbar{
-        margin: 0px; 
-    }
-
-    .navbar li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        flex: center;
-        display: block; 
-    }
-
-    .navbar li a{
-        font-size: 45px;
-        color: rgb(236, 236, 236);
-        
-    }
-
-    .navbar li:nth-child(1){
-        float: none;
-    }
-    .navbar li:nth-child(2){
-        float: none;
-    }
-
-
-    .box1 h1{
-        font-size: 70px;
-    }
-
-    .box1 {
-        height: 65vh;
-        line-height: 60px;
-        padding-top: 200px;  
-
-        background: rgba(0, 0, 0, 0.4) url('images/background.png'); 
-        background-blend-mode: darken;
-        background-size: cover;
-        background-position: center; 
-    }
-
-
-    
-    
-    .box2 {
-        height: 300px;
-        width: auto;
-        background-color: rgb(180, 45, 45);  
-        padding-top: 50px;  
-    }
-    
-    
-    .box2 .container2{
-        height: 300px;  
-        width: auto;
-    } 
-    
-    .box2 h1{
-        color: white;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        font-size: 60px;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .box2 p{
-        text-align: center;
-        font-size: 11px;
-        font-family: 'Orbitron', sans-serif;
-        color: white;
-        padding-left: 0%;
-    }
-    
-  
-    
-    
-    .box2 .explorebutton{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0%;
-        padding-top: 2%;
-        font-size: medium;
-    }
-    
-    
-    .explorebutton button{
-        background-color: rgb(255, 255, 255);
-        border: none;
-        border-radius: 30px;
-        font-family: 'Bebas Neue', cursive;
-        color: rgb(180, 45, 45);
-        padding: 8px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 22px;
-    }
-    
-    .explorebutton button:hover{
-        font-size: 25px;
-    }
-
-
-    .box2 .container2 img{
-        display: none;
-    }
-
-
-    .box3 {
-        height: 250px;
-        width: 100%;    
-        background: rgba(0, 0, 0, 0.7) url('images/city.png'); 
-        background-blend-mode: darken;
-        background-size: cover;
-        background-position: center;  
-        padding-top: 130px;
-    }
-
-    .box3 h1{
-        font-size: 70px;  
-    }
-
-    .box3 .shopbutton{
-        bottom: 10px;
-    }
-
-
-    /* Tutorials */
-
-    .tut{
-        height: 200px;
-        background:rgba(0, 0, 0, 0.55) url('images/tut.png') no-repeat; 
-        background-size: 150%;
-        background-position-y: -50px; 
-    }
-
-    .tut h1{
-        font-size: 50px;
-        transform: translateY(120%);
-    }
-
-
-    /* Projects */
-
-    .project1 {
-        float: center;
-        
-        height: 25vh;
-        width: 100%;    
-        background: rgba(0, 0, 0, 0.55) url('images/ships.png') no-repeat; 
-      
-        background-blend-mode: darken;
-        background-size: cover;
-        background-position: center;  
-        padding-top: 153px;  
-        margin-bottom: none;
-        padding-bottom: none;
-    }
-    
-    .project1 h1{
-        text-align: center;
-        font-size: 40px;
-        font-family: 'Orbitron', sans-serif;
-        color: rgb(255, 136, 0);
-        padding-bottom: 0px;
-        
-    }
-    
-    .project1 p{
-        text-align: center;
-        font-size: 17px;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        padding: 0px;
-        
-    }
-
-    .project2 {
-        float: center;
-        
-        height: 25vh;
-        width: 100%;    
-        background-blend-mode: darken;
-        background-size: cover;
-        background-position: center;  
-    
-        padding-top: 153px;  
-        margin-bottom: none;
-        padding-bottom: none;
-    }
-    
-    .project2 h1{
-        font-size: 40px;
-    }
-    
-    .project2 p{
-        font-size: 17px;
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        padding: 0px;
-
-        
-        
-    }
-
-    .project2 button{
-        display: block;
-        margin: auto;
-    }
-
-    .products{
-        grid-template-columns: auto auto;
-    }
-   
-}
-
-
-
 /* NEXUS */
 
 .machina {
@@ -1480,52 +1197,5 @@ html{
 
 
 
-@media (max-width: 1400px){
-
-    .video-box{
-        grid-template-columns: auto auto;
-    }
-
-    .postcontainer{
-        grid-template-columns: auto auto;
-    }
-}
 
 
-
-
-@media (max-width: 940px){
-
-    .video-box{
-        grid-template-columns: auto;
-    }
-
-    .postcontainer{
-        grid-template-columns: auto;
-    }
-}
-
-@media (max-width: 650px){
-
-    .products{
-        grid-template-columns: auto;
-    }
-
-    .postcontainer{
-        grid-template-columns: auto;
-    }
-
-}
-
-@media (max-width: 450px){
-
-    .video{
-        height: 200px;
-        width: auto;
-    }
-
-    .blockquote{
-        height: 300px;
-        width: auto;
-    }
-}
